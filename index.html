@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Boke - Makina në Shitje | Berat, Albania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>AUTO BOKE</span>
+            </div>
+            <div class="nav-links">
+                <a href="#makina">Makinat</a>
+                <a href="#rreth-nesh">Rreth Nesh</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="https://instagram.com/Auto_Boke" target="_blank" class="instagram-link">
+                    <i class="fab fa-instagram"></i> @Auto_Boke
+                </a>
+                <a href="admin.html" class="admin-btn"><i class="fas fa-lock"></i> Admin</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Makinë të Re,<br><span class="highlight">Emocion të Ri!</span></h1>
+            <p>Gjej makinën e ëndrrave të tua në Berat. Cilësi e garantuar, çmime konkurruese.</p>
+            <a href="#makina" class="cta-btn">Shiko Makinat</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <i class="fas fa-car"></i>
+                <span id="total-cars">0</span>
+                <p>Makina në Shitje</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <span>500+</span>
+                <p>Klientë të Kënaqur</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-shield-alt"></i>
+                <span>100%</span>
+                <p>Transparencë</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Makinat Section -->
+    <section id="makina" class="cars-section">
+        <div class="container">
+            <h2 class="section-title">Makinat në Shitje</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Të Gjitha</button>
+                <button class="filter-btn" data-filter="bmw">BMW</button>
+                <button class="filter-btn" data-filter="mercedes">Mercedes</button>
+                <button class="filter-btn" data-filter="audi">Audi</button>
+                <button class="filter-btn" data-filter="toyota">Toyota</button>
+                <button class="filter-btn" data-filter="golf">VW Golf</button>
+            </div>
+            <div id="cars-grid" class="cars-grid">
+                <!-- Makinat do të ngarkohen këtu automatikisht -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rreth Nesh -->
+    <section id="rreth-nesh" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Pse të Zgjidhni Auto Boke?</h2>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Cilësi të garantuar për çdo makinë</li>
+                        <li><i class="fas fa-check-circle"></i> Çmime më konkurruese në treg</li>
+                        <li><i class="fas fa-check-circle"></i> Transparencë maksimale në dokumentacion</li>
+                        <li><i class="fas fa-check-circle"></i> Kontroll teknik i detajuar</li>
+                        <li><i class="fas fa-check-circle"></i> Asistencë në dokumentacionin e shitblerjes</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-car-side"></i>
+                        <p>Auto Boke - Berat, Albania</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Na Kontaktoni</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>069529788</p>
+                    <a href="https://wa.me/35569529788" target="_blank" class="contact-btn">Na Shkruaj</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@Auto_Boke</p>
+                    <a href="https://instagram.com/Auto_Boke" target="_blank" class="contact-btn">Na Ndiq</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Vendndodhja</h3>
+                    <p>Berat, Albania</p>
+                    <span class="contact-btn disabled">Vizitoni Showroom-in</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Auto Boke. Të gjitha të drejtat e rezervuara.</p>
+            <p>Made with <i class="fas fa-heart"></i> in Berat, Albania</p>
+        </div>
+    </footer>
+
+    <!-- Modal për Kontakt -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Interesuar për këtë makinë?</h2>
+            <div id="modal-car-info"></div>
+            <form id="contact-form">
+                <input type="text" id="client-name" placeholder="Emri juaj" required>
+                <input type="tel" id="client-phone" placeholder="Numri i telefonit" required>
+                <textarea id="client-message" placeholder="Mesazhi juaj (opsional)"></textarea>
+                <button type="submit" class="submit-btn">Dërgo Interesimin</button>
+            </form>
+            <p class="privacy-note">* Të dhënat tuaja do të përdoren vetëm për kontaktim nga Auto Boke</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
